@@ -11,7 +11,7 @@ public class max_area {
         for(int i=0;i<n-1;i++){
             for(int j=n-1;j>0;j--){
                 int min=Math.min(arr[i],arr[j]);
-                int width=j-1;
+                int width=j-i;
                 int area=width*min;
                 max=Math.max(max,area);
             }
